@@ -1,5 +1,5 @@
 UI.registerHelper('csl', function(context, options) {
-	console.log("Options", options);
+
 	if(context && _.isArray(context)) {
 		var out = "";
 		for (var i = 0; i < context.length; i++) {
@@ -8,7 +8,7 @@ UI.registerHelper('csl', function(context, options) {
 			} else {
 				out += context[i];
 			}
-			
+
 			if (i != context.length-1)
 				out += ", ";
 		}

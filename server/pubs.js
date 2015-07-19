@@ -1,3 +1,3 @@
 Meteor.publish('jargon', function() {
-  return Jargon.find();
+	return Jargon.find();
 });
