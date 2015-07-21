@@ -1,17 +1,18 @@
 <template name="jargonMore">
   <div class="post-page page">
-  	<div class="post">
-    	{{> jargonItem}}
-    	<!-- <div class="clearfix"></div> -->
-    	
-    	<div class="post-content" style="padding-top: 3px;">
-    		{{descr}}
-    		<div class="pull-right">
+	<div class="post">
+		{{> jargonItem}}
+		<!-- <div class="clearfix"></div> -->
+		
+		<div class="post-content" style="padding-top: 3px;">
+		{{#markdown}}{{descr}}{{/markdown}}
+			
+			<div class="pull-right">
 				<a href="{{url}}" target="__blank" title="{{url}}">{{domainOf url}}</a>
 			</div>
-    	</div>
+		</div>
 
 
-    </div>
+	</div>
   </div>
 </template>

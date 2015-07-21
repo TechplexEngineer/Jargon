@@ -9,3 +9,4 @@ insecure
 twbs:bootstrap
 iron:router
 sacha:spin
+perak:markdown
