@@ -4,7 +4,7 @@ UI.registerHelper('csl', function(context, options) {
 		var out = "";
 		for (var i = 0; i < context.length; i++) {
 			if (options && _.isString(options)) {
-				out += "<a href=\"/"+options+"/"+context[i]+"\">"+context[i]+"</a>";
+				out += "<a href=\""+pathFor(options, {name:context[i]} )+"\">"+context[i]+"</a>";
 			} else {
 				out += context[i];
 			}

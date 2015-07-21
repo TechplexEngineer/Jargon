@@ -1,13 +1,12 @@
 <template name="jargonItem">
-	<div class="post">
-		<div class="post-content">
-			<div class="pull-right">
-				Related: <small>{{{csl related 'term'}}}</small> <br />
-				<!-- <a href="{{url}}" target="__blank" title="{{url}}">{{domain}}</a> -->
-				<a href="{{pathFor 'term'}}">more</a> | <a href="{{pathFor 'termEdit'}}">edit</a> | <a href="{{pathFor 'term'}}">link</a>
-			</div>
-			<dt><a href="{{pathFor 'terms'}}">{{name}}</a></dt>
-			<dd>{{lname}}</dd>
+	<div class="post-content">
+		<div class="pull-right">
+			Related: <small>{{{csl related 'terms'}}}</small> <br />
+			<!-- <a href="{{url}}" target="__blank" title="{{url}}">{{domain}}</a> -->
+			<a href="{{pathFor 'terms'}}">similar</a> | 
+			<a href="{{pathFor 'termEdit'}}">edit</a>
 		</div>
+		<dt><a href="{{pathFor 'term'}}">{{name}}</a></dt>
+		<dd>{{lname}}</dd>
 	</div>
 </template>

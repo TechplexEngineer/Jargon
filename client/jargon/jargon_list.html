@@ -1,7 +1,9 @@
 <template name="jargonList">
 	<dl>
 		{{#each this}}
-			{{> jargonItem}}
+			<div class="post">
+				{{> jargonItem}}
+			</div>
 		{{/each}}
 	</dl>
 </template>

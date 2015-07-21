@@ -10,10 +10,15 @@ Template.jargonEdit.events({
     	related: 	$(e.target).find('[name=related]').val()
     };
 
-    console.log($(e.target).find('[name=_id]').val());
+    if ($(e.target).find('[name=_id]').val()) {
+        item._id = $(e.target).find('[name=_id]').val();
+    }
 
-    //item._id = Jargon.insert(item);
-
-    //Router.go('postPage', post);
+    Meteor.call('jargonInsertOrUpdate', item, function(error, result) {
+      // display the error to the user and abort
+      if (error)
+        return alert(error.reason);
+      Router.go('term', {_id: result._id});  
+    });
   }
 });
