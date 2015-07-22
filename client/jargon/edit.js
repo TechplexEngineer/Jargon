@@ -53,6 +53,17 @@ Template.jargonEdit.events(
 	'click #hideList': function (e) {
 		e.preventDefault();
 		$('#otherTerms').hide();
+	},
+	'click .deleteJargon': function (e) {
+		e.preventDefault();
+		var yesDelete = confirm("Are you sure you want to delete '"+$(e.target).data('term')+"'?");
+		if (yesDelete) {
+			Meteor.call('jargonRemove', $(e.target).data('jid'), function(error, result) {
+				if (error)
+					return alert(error.reason);
+				Router.go('home');  
+			});
+		}
 	}
 });
 
