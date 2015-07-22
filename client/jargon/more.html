@@ -5,11 +5,13 @@
 		<!-- <div class="clearfix"></div> -->
 		
 		<div class="post-content" style="padding-top: 3px;">
-		{{#markdown}}{{descr}}{{/markdown}}
+			{{#markdown}}{{descr}}{{/markdown}}
 			
+			{{#if url}}
 			<div class="pull-right">
 				<a href="{{url}}" target="_blank" title="{{url}}">{{domainOf url}}</a>
 			</div>
+			{{/if}}
 		</div>
 
 
