@@ -22,3 +22,8 @@ Template.jargonEdit.events({
     });
   }
 });
+
+//I feel like I shouldn't have to do this. Starting the tagsinput.
+Template.jargonEdit.onRendered(function () {
+    $('[data-role="tagsinput"]').tagsinput();
+});

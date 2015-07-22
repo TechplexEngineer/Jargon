@@ -171,3 +171,6 @@ a[target="_blank"] {
   background-image: -o-linear-gradient(transparent, transparent), url(//en.wikipedia.org/static/1.26wmf14/skins/Vector/images/external-link-ltr-icon.png?2015-07-14T19:41:40Z);
   padding-right: 13px
 }
+.bootstrap-tagsinput {
+	width: 100%;
+}

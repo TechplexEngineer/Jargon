@@ -6,7 +6,7 @@
 
 meteor-platform
 insecure
-twbs:bootstrap
 iron:router
 sacha:spin
 perak:markdown
+ajduke:bootstrap-tagsinput
