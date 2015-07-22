@@ -3,6 +3,11 @@
 		<div class="form-group">
 			<label class="control-label" for="name">Term</label>
 			<input name="name" type="text" value="{{name}}" placeholder="FTP" class="form-control"/>
+			<div id="otherTerms" style="display:none;">
+				<p>Try not to duplicate terms. Here are some similar to yours:</p>
+				<ul></ul>
+				<button class="btn" id="hideList">Hide List</button>
+			</div>
 		</div>
 		<div class="form-group">
 			<label class="control-label" for="lname">Definition</label>
