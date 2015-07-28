@@ -33,6 +33,8 @@
 
 
 		<input type="submit" value="Submit" class="btn btn-primary"/>
+		{{#if _id}}
 		<button class="btn btn-danger deleteJargon" data-jid="{{_id}}" data-term="{{name}}">Delete</button>
+		{{/if}}
 	</form>
 </template>
